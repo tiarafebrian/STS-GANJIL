@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+<script>
+// Program cek jumlah hari dalam bulan
+
+let bulan = prompt("Januari, Februari, Maret, April");
+
+bulan = bulan.toLowerCase(); // supaya input tidak peka huruf besar/kecil
+
+if (bulan === "januari" || bulan === "maret" || bulan === "mei" || bulan === "juli" || bulan === "oktober" || bulan === "desember") {
+  console.log("Bulan ini memiliki 31 hari");
+} else if (bulan === "februari" || bulan === "pebruari") {
+  console.log("Bulan ini memiliki 28 atau 29 hari");
+} else if (bulan === "april" || bulan === "juni" || bulan === "september" || bulan === "november") {
+  console.log("Bulan ini memiliki 30 hari");
+} else {
+  console.log("Nama bulan tidak valid!");
+}
+</script>
+</html>
