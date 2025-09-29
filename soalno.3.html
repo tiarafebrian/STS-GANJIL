@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+  <script>
+let saldo = 1000000; // saldo awal Rp. 1.000.000
+
+let jenis = prompt("Ketik 'tarik' untuk tarik tunai atau 'setor' untuk setor tunai:");
+let jumlah = parseInt(prompt("Masukkan jumlah uang:"));
+
+if (jenis === "tarik") {
+  saldo = saldo - jumlah;
+  alert("Saldo awal: Rp.1000000\nTarik tunai: -Rp." + jumlah + "\nSaldo akhir: Rp." + saldo);
+} else if (jenis === "setor") {
+  saldo = saldo + jumlah;
+  alert("Saldo awal: Rp.1000000\nSetor tunai: +Rp." + jumlah + "\nSaldo akhir: Rp." + saldo);
+} else {
+  alert("Jenis transaksi tidak dikenal.");
+}
+  </script>
+</body>
+
+</html>
