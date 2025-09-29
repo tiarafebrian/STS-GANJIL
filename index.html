@@ -5,26 +5,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML</title>
+  <title>STSGANJIL2025</title>
   
 
 </head>
 
 <body>
  <script>
-// Program Kehadiran Siswa
-let jumlahSiswa = parseInt(prompt("Masukkan jumlah siswa:"));
+    // Minta input jumlah siswa
+    let jumlah = prompt("Masukkan jumlah siswa dalam kelas:");
 
-// daftar siswa yang tidak hadir
-let tidakHadir = [3, 7, 12, 18];
+    // Ubah ke integer
+    jumlah = parseInt(jumlah);
 
-for (let i = 1; i <= jumlahSiswa; i++) {
-  if (tidakHadir.includes(i)) {
-    console.log("Siswa ke " + i + " TIDAK HADIR");
-  } else {
-    console.log("Siswa ke " + i + " hadir");
-  }
-}
+    // Daftar siswa yang tidak hadir
+    const tidakHadir = [3, 7, 12, 18];
+
+    // String untuk ditampilkan sekaligus di alert
+    let hasil = "";
+
+    for (let i = 1; i <= jumlah; i++) {
+      if (tidakHadir.includes(i)) {
+        console.log("Siswa ke-" + i + " TIDAK HADIR.");
+        hasil += "Siswa ke-" + i + " TIDAK HADIR.\n";
+      } else {
+        console.log("Siswa ke-" + i + " hadir.");
+        hasil += "Siswa ke-" + i + " hadir.\n";
+      }
+    }
+
+    // Tampilkan semua hasil dalam 1 alert
+    alert(hasil);
   </script>
 </body>
 </html>
