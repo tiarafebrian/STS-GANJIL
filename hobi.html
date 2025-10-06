@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>STSGANJIL2025</title>
+  
+
+</head>
+
+<body>
+ <script>
+    // Minta input jumlah siswa
+    let jumlah = prompt("Masukkan jumlah siswa dalam kelas:");
+
+    // Ubah ke integer
+    jumlah = parseInt(jumlah);
+
+    // Daftar siswa yang tidak hadir
+    const tidakHadir = [3, 7, 12, 18];
+
+    // String untuk ditampilkan sekaligus di alert
+    let hasil = "";
+
+    for (let i = 1; i <= jumlah; i++) {
+      if (tidakHadir.includes(i)) {
+        console.log("Siswa ke-" + i + " TIDAK HADIR.");
+        hasil += "Siswa ke-" + i + " TIDAK HADIR.\n";
+      } else {
+        console.log("Siswa ke-" + i + " hadir.");
+        hasil += "Siswa ke-" + i + " hadir.\n";
+      }
+    }
+
+    // Tampilkan semua hasil dalam 1 alert
+    alert(hasil);
+  </script>
+</body>
+</html>
